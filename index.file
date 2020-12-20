@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>UFO - Vijay Rajpurohit </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>UFO Sightings</h1>
+                <p style="color:grey;">The truth is out there</p>
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+               <form action="/action_page.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="datetime" placeholder="1/1/2010">
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                    <input type="text" class="form-control" id="state" placeholder="State">
+                    <input type="text" class="form-control" id="country" placeholder="Country">
+                    <input type="text" class="form-control" id="shape" placeholder="Shape">
+                    <a id="search" type="submit" class="btn btn-defaut">Search</a>
+                    <a id="reset_btn" type = "reset" class="btn btn-default">Reset Data</a>
+                </div>
+            </form>
+            </div>
+            <div class="col-md-8">
+                <div class="info">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table" id="tbdata">
+                        <thead>
+                            <tr>
+                                <th>datetime</th>
+                                <th>city</th>
+                                <th>state</th>
+                                <th>country</th>
+                                <th>shape</th>
+                                <th>durationMinutes</th>
+                                <th>comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/data.js" type="text/javascript"></script>
+    <script src="static/app.js" type="text/javascript"></script>
+</body>
+</html>
